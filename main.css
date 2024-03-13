@@ -1,0 +1,56 @@
+.light-theme {
+    --bg: #ffffff; /* Cor de fundo */
+    --fontColor: #000000; /* Cor da fonte */
+    --btnBg: #000000; /* Cor de fundo do botão */
+    --btnFontColor: #ffffff; /* Cor da fonte do botão */
+}
+
+.dark-theme {
+    --bg: #000000; /* Cor de fundo */
+    --fontColor: #ffffff; /* Cor da fonte */
+    --btnBg: #ffffff; /* Cor de fundo do botão */
+    --btnFontColor: #000000; /* Cor da fonte do botão */
+}
+
+* {
+    color: var(--fontColor);
+    font-family: helvética;
+}
+
+body {
+    background: var(--bg);
+}
+
+.button {
+    border-radius: 25px;
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#msg {
+    text-align: center;
+    font-size: 20px;
+}
+
+.btn {
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline-style: none;
+}
